@@ -1,0 +1,61 @@
+4.1
+Assume that the size of the base font on a system is 12 points.
+
+a)How big is a 36-point font in ems?
+b)How big is a 9-point font in ems?
+c)How big is a 24-point font in picas?
+d)How big is a 12-point font in inches?
+e)How big is a 1-inch font in picas?
+4.2
+Fill in the blanks in the following statements:
+
+a)Using the ______________ element allows you to use external style sheets in your pages.
+b)To apply a CSS rule to more than one element at a time, separate the element names with a(n)______________.
+c)Pixels are a(n)______________-length measurement unit.
+d)The ______________ pseudo-class is activated when the user moves the mouse cursor over the specified element.
+e)Setting the ______________ property to scroll provides a mechanism for creating scrollable content without compromising an element’s dimensions.
+f)______________ is a generic inline element that applies no inherent formatting, and ______________is a generic block-level element that applies no inherent formatting.
+g)Setting property background-repeat to ______________ tiles the specified background-image vertically.
+h)To begin a block of styles that applies only to the print media type, you use the declaration ______________ print, followed by an opening curly brace ({).
+i)The ______________ property allows you to indent the first line of text in an element.
+j)The three components of the box model are the _____________, ______________ and ______________.
+
+Answers to Self-Review Exercises
+
+4.1
+a) 3 ems.
+b) 0.75 ems.
+c) 2 picas.
+d) 1/6 inch.
+e) 6 picas.
+4.2
+a) link.
+b) comma.
+c) relative.
+d) :hover.
+e) overflow.
+f) span, div.
+g) repeat-y.
+h) @media.
+i) text-indent.
+j) padding, border, margin.
+
+4.1
+a) 36/12 = 3em +
+b) 9/12 = 3/4 em +
+c) 24/12 = 2 pica +
+d) 1pt=1/72in -> 12pt= 1/6 in +
+e) 1in = 72pt = 72/12 picas = 6 picas +
+
+4.2
+a) <style type="text/css"></style> - link
+b) space - ,
+c) absoulute - relative
+d) hover over - :hover
+e) overflow +
+f) span, div
+g) repeat-y
+h) @media
+i) text-indent
+j) margin, padding, and border
+

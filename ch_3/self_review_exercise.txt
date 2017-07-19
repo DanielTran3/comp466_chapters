@@ -1,0 +1,78 @@
+3.1
+Fill in the blanks in each of the following:
+
+a) The color input type enables the user to enter a color. At the time of this writing, most browsers render the color input type as a text field in which the user can enter a ________.
+b) The ________ attribute allows you to place temporary text in a text field.
+c) If you want to bypass validation, you can add the formnovalidate attribute to input type ________.
+d) The ________ attribute forces the user to enter a value before submitting the form.
+e) The ________ control is typically displayed for the number input type and includes only the valid numbers.
+f) The ________ input type enables the user to enter an hour, minute, second and fraction of second.
+g) The ________ element provides input options for a text input element.
+h) The ________ element describes content that’s separate from the main content of the page and could potentially be used or distributed elsewhere, such as a news article, forum post or blog entry.
+i) The ________ element describes the text that usually appears at the bottom of the content or the bottom of a section element.
+j) The ________ element indicates the appropriate place to break a word when the text wraps to multiple lines.
+3.2
+State whether each of the following is true or false. If false, explain why.
+
+a) Any particular HTML5 form input types must render identically in every HTML5-compliant browser.
+b) When the focus is placed in the text field (i.e., the cursor is in the text field), the placeholder text is submitted to the server.
+c) You do not need to include autofocus in your forms.
+d) The new HTML 5 input types are self validating on the client side, eliminating the need to add complicated scripts to your forms to validate user input and reducing the amount of invalid data submitted.
+e) The range input type is inherently self-validating when it’s rendered by the browser as a slider control, because the user is unable to move the slider outside the bounds of the minimum or maximum value.
+f) HTML5 self validates the tel input type.
+g) If the user enters an improperly formatted URL in a url input type, it will not validate. HTML5 does not validate that the URL entered actually exists.
+h) The nav element displays a drop-down menu of hyperlinks.
+i) The header element may be used only one time on a page.
+j) nav elements can be nested in an aside element.
+k) You might use the brk to prevent awkward word breaks.
+
+Answers to Self-Review Exercises
+
+3.1
+a) hexadecimal code.
+b) placeholder.
+c) submit.
+d) required.
+e) spinner.
+f) time.
+g) datalist.
+h) article.
+i) footer.
+j) wbr.
+3.2
+a) False. The rendering of input types can vary among browsers.
+b) False. When the focus is placed in the text field, the placeholder text disappears. It’s not “submitted” when the user clicks the Submit button (unless the user types the same text).
+c) True.
+d) True.
+e) True.
+f) False. The length and format of telephone numbers varies greatly based on location, making validation quite complex, so HTML5 does not self validate the tel input type. To ensure that the user enters a phone number in a proper format, we use the pattern attribute.
+g) True.
+h) False. The nav element groups navigation links.
+i) False. The header element may be used multiple times on a page and often includes HTML headings (<h1> through <h6>)
+j) True.
+k) False. You might use the wbr to prevent awkward word breaks.
+
+3.1
+a) Hexadecimal Code +
+b) placeholder +
+c) submit + 
+d) required +
+e) spinner +
+f) datetime - time
+g) textfield - datalist
+h) sections - article
+i) footer +
+j) wbr +
+
+3.2
+a) False: The elements are placed in the browser by the html code, but is rendered differently in different browsers depending on the browser +
+b) False: Placeholder text is not submitted to the server, it only disappears +
+c) True: Autofocus is optional for the selection of an input on loading the page +
+d) True: Reduces work for validation, but server-side validation is still required +
+e) True: The range input has limits due to the slider, where the user cannot move the slider past the specified range +
+f) False: The tel input types can only specify formatting for the inputs / There are many phone number formats, which make it difficult to accomodate for, so self-validation was avoided
+g) True: No validation for if the URL exists or not, only checks the formatting of the entered URL +
+h) False: It groups a list of hyperlinks and is not a drop-down menu of hyperlinks +
+i) False: The header element can be used as many times as desired on one page +
+j) True: Many things can be nested inside an aside +
+k) False: Use a wbr to break words and prevent awkward word breaks +

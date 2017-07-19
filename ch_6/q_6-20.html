@@ -1,0 +1,62 @@
+<!--
+6.20
+Write a script that reads five integers and determines and outputs markup that displays the largest and smallest integers in the group. Use only the scripting techniques you learned in this chapter.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 6.20</title>
+	<script type="text/javascript">
+		var val1 = parseInt(prompt("Please Enter a value"));
+		while (isNaN(val1)) {
+			val1 = parseInt(prompt("Please Enter a valid value"));
+		}
+		var val2 = parseInt(prompt("Please Enter a value"));
+		while (isNaN(val2)) {
+			val2 = parseInt(prompt("Please Enter a valid value"));
+		}
+		var val3 = parseInt(prompt("Please Enter a value"));
+		while (isNaN(val3)) {
+			val3 = parseInt(prompt("Please Enter a valid value"));
+		}
+		var val4 = parseInt(prompt("Please Enter a value"));
+		while (isNaN(val4)) {
+			val4 = parseInt(prompt("Please Enter a valid value"));
+		}
+		var val5 = parseInt(prompt("Please Enter a value"));
+		while (isNaN(val5)) {
+			val5 = parseInt(prompt("Please Enter a valid value"));
+		}
+		var min = val1;
+		var max = val1;
+		if (val2 > max) {
+			max = val2;
+		}
+		if (val2 < min) {
+			min = val2;
+		}
+		if (val3 > max) {
+			max = val3;
+		}
+		if (val3 < min) {
+			min = val3;
+		}
+		if (val4 > max) {
+			max = val4;
+		}
+		if (val4 < min) {
+			min = val4;
+		}
+		if (val5 > max) {
+			max = val5;
+		}
+		if (val5 < min) {
+			min = val5;
+		}
+		document.writeln("<p>Min: " + min + " Max: " + max + "</p>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

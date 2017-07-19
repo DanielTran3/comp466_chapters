@@ -1,0 +1,45 @@
+<!--
+8.12
+Assume that i = 1, j = 2, k = 3 and m = 2. What does each of the given statements print? Are the parentheses necessary in each case?
+
+a)document.writeln( i == 1 );
+b)document.writeln( j == 3 );
+c)document.writeln( i >= 1 && j < 4 );
+d)document.writeln( m <= 99 && k < m );
+e) document.writeln( j >= i || k == m );
+f)document.writeln( k + m < j || 3 - j >= k );
+g) document.writeln( !( k > m ) );
+
+a) true
+b) false
+c) true
+d) false
+e) true
+f) false
+g) false
+Parenthesis in all cases are necessary (for the writeln)
+Especially necessary for the case of g to reverse the output value
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 8.12</title>
+	<script type="text/javascript">
+		var i = 1;
+		var j = 2;
+		var k = 3;
+		var m = 2;
+		document.writeln( i == 1 );
+		document.writeln( j == 3 );
+		document.writeln( i >= 1 && j < 4 );
+		document.writeln( m <= 99 && k < m );
+		document.writeln( j >= i || k == m );
+		document.writeln( k + m < j || 3 - j >= k );
+		document.writeln( !( k > m ) );
+	</script>
+</head>
+<body>
+
+</body>
+</html>

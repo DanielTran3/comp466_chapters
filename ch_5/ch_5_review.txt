@@ -1,0 +1,49 @@
+Self-Review Exercises
+
+5.1
+Fill in the blanks in the following statements:
+
+a)The ________ property makes it easy to add a text shadow effect to any text.
+b)The ________ property allows you to add rounded corners to any element.
+c)CSS3 includes two new ways to express color—________ and________.
+d)The ________ defines the number of pixels that the box-shadow will appear to the left or the right of the box.
+e)________ are similar to linear gradients, but the color changes gradually from an inner circle (the start) to an outer circle (the end).
+f)The ________ divides the image into nine regions: four corners, four sides and a middle, which is transparent unless otherwise specified.
+g)The animation-timing-function determines how the animation progresses in one cycle of its duration. Possible values include ________, ________, ________, ________, ________ and ________.
+h)For the element being animated, the ________ defines the element’s properties that will change during the animation, the values to which those properties will change, and when they’ll change.
+i)________ are similar in concept to animations, but they allow you to specify only the starting and ending values of the CSS properties being changed. An animation’s keyframes enable you to control intermediate states throughout the animation’s duration.
+j)CSS3 ________ allow you to move, rotate, scale and skew elements.
+k)________ consist of one or more selectors followed by a declaration block in curly braces ({}).
+l)In CSS3, you can use ________ to easily style attributes.
+
+5.2
+State whether each of the following is true or false. If false, explain why.
+
+a)The @font-face rule specifies that an embedded font will be used when the document is rendered on a computer screen.
+b)You can use gradients in any property that accepts an image.
+c)A horizontal gradient gradually changes from top to bottom.
+d)You can add lines between columns using the column-gap property.
+e)The @media rule determines the type and size of device on which the page is rendered. When the browser looks at the rule, the result is either true or false. The rule’s styles are applied only if the result is false.
+f)To add multiple background images to an element, use the background-position to specify where each image is placed using the box model.
+
+5.1
+a) text-shadow +
+b) border-radius +
+c) rgba and hsla +
+d) horizontal offset +
+e) radial gradients +
+f) image-border - border-image-slice
+g) Linear, ease-in, ease-out, ease, ease-in-out, cubic-bezier +
+h) keyframes / @keyframes rule
+i) transitions +
+j) transformations +
+k) rules +
+l) classes - selectors
+
+5.2
+a) True. - False. The @media screen rule specifies that an embedded font will be used when the document is rendered on a computer screen
+b) False. Can be used in anything with backgrounds - True.
+c) False. Horizontal Gradients change from left to right, while Vertical Gradients change from top down
+d) False. The column-gap property changes the spacing between columns, while the column-rule property adds lines between columns
+e) False. Rule styles applied if the result is True
+f) False. Background-position specifies where the images will be placed, while the background-origin uses the box-model to determine where each image will be placed.

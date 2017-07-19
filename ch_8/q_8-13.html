@@ -1,0 +1,47 @@
+<!--
+k = 1: x = 1
+k = 2: x = 3
+k = 3: x = 4
+k = 4: x = 3
+k = 10: x = 30
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 8.13</title>
+	<script type="text/javascript">
+		var x;
+		function whatX(k) {
+			switch(k) {
+				case 1:
+					break;
+				case 2:
+				case 3:
+					++k;
+					break;
+				case 4:
+					--k;
+					break;
+				default:
+					k *= 3;
+			}
+			return k;
+		}
+
+		x = whatX(1);
+		document.writeln("<p>" + x + "</p>");
+		x = whatX(2);
+		document.writeln("<p>" + x + "</p>");
+		x = whatX(3);
+		document.writeln("<p>" + x + "</p>");
+		x = whatX(4);
+		document.writeln("<p>" + x + "</p>");
+		x = whatX(10);
+		document.writeln("<p>" + x + "</p>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

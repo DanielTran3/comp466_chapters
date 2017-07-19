@@ -1,0 +1,16 @@
+2.13
+Categorize each of the following as an element or an attribute:
+
+a) width
+b) td
+c) th
+d) name
+e) select
+f) type
+
+a) attribute
+b) element
+c) element
+d) attribute
+e) element
+f) attribute

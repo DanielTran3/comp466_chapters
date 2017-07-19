@@ -1,0 +1,149 @@
+Self-Review Exercises
+
+7.1
+Fill in the blanks in each of the following statements:
+
+a) All scripts can be written in terms of three types of control statements: ________, ________ and ________.
+b) The ________ double-selection statement is used to execute one action when a condition is true and another action when that condition is false.
+c) Repeating a set of instructions a specific number of times is called ________ repetition.
+d) When it’s not known in advance how many times a set of statements will be repeated, a(n) ________ (or a(n) ________, ________ or ________) value can be used to terminate the repetition.
+7.2
+Write four JavaScript statements that each add 1 to variable x, which contains a number.
+
+7.3
+Write JavaScript statements to accomplish each of the following tasks:
+
+a) Assign the sum of x and y to z, and increment the value of x by 1 after the calculation. Use only one statement.
+b) Test whether the value of the variable count is greater than 10. If it is, print "Count is greater than 10".
+c) Decrement the variable x by 1, then subtract it from the variable total. Use only one statement.
+d) Calculate the remainder after q is divided by divisor, and assign the result to q. Write this statement in two different ways.
+7.4
+Write a JavaScript statement to accomplish each of the following tasks:
+
+a) Declare variables sum and x.
+b) Assign 1 to variable x.
+c) Assign 0 to variable sum.
+d) Add variable x to variable sum, and assign the result to variable sum.
+e) Print "The sum is: ", followed by the value of variable sum.
+7.5
+Combine the statements you wrote in Exercise 7.4 into a script that calculates and prints the sum of the integers from 1 to 10. Use the while statement to loop through the calculation and increment statements. The loop should terminate when the value of x becomes 11.
+
+7.6
+Determine the value of each variable after the calculation is performed. Assume that, when each statement begins executing, all variables have the integer value 5.
+
+a) product *= x++;
+b) quotient /= ++x;
+7.7
+Identify and correct the errors in each of the following segments of code:
+
+a)
+while ( c <= 5 ) {
+   product *= c;
+   ++c;
+b)
+if ( gender == 1 )
+   document.writeln( "Woman" );
+else;
+   document.writeln( "Man" );
+7.8
+What is wrong with the following while repetition statement?
+
+while ( z >= 0 )
+   sum += z;
+
+Answers
+7.1
+a) Sequence, selection and repetition.
+b) if...else.
+c) Counter-controlled (or definite).
+d) Sentinel, signal, flag or dummy.
+7.2
+x = x + 1;
+x += 1;
+++x;
+x++;
+7.3
+a) z = x++ + y;
+b)
+if ( count > 10 )
+   document.writeln( "Count is greater than 10" );
+c) total -= --x;
+d)
+q %= divisor;
+q = q % divisor;
+7.4
+a) var sum, x;
+b) x = 1;
+c) sum = 0;
+d) sum += x; or sum = sum + x;
+e) document.writeln( "The sum is: " + sum );
+7.5
+The solution is as follows:
+Answer below is correct
+
+7.6
+a) product = 25, x = 6;
+b) quotient = 0.833333..., x = 6;
+7.7
+a) Error: Missing the closing right brace of the while body. Correction: Add closing right brace after the statement ++c;.
+b) Error: The ; after else causes a logic error. The second output statement always executes. Correction: Remove the semicolon after else.
+7.8
+The value of the variable z is never changed in the body of the while statement. Therefore, if the loop-continuation condition (z >= 0) is true, an infinite loop is created. To prevent the creation of the infinite loop, z must be decremented so that it eventually becomes less than 0.
+
+
+7.1
+a) Sequence Structure, Control Structure, and Repetition Structure
+b) if/else
+c) Counter-Controlled Repetition
+d) sentinel or signal value, dummy value, or flag value
+
+7.2
+x++;, ++x;, x += 1;, x = x + 1;
+
+7.3
+a) z = x++ + y;
+b) if (count > 10) {document.writeln("<p>Count is greater than 10</p>")}
+c) total -= --x;
+d) q %= divisor;, q = q%divisor;
+
+7.4
+a) var sum, x;
+b) x = 1;
+c) sum = 0;
+d) sum += x;
+e) document.writeln("<p>The sum is: " + sum + "</p>");
+
+7.5 +
+var sum = 0;
+var x = 1;
+while(x < 11) {
+	sum += x;
+	x++;
+}
+document.writeln("<p>The sum is: " + sum + "</p>");
+
+7.6
+a) product = 25, x = 6
+b) quotient = 5/6, x = 6
+
+7.7
+a) Need to initialize variables
+ - Missing closing brace
+var product = 1;
+var c = 1;
+while ( c <= 5 ) {
+   product *= c;
+   ++c;
+}
+b) Fix equality sign and initialize variable. If the input is take from user, make sure it is parsed
+ - Remove semicolon from else
+var gender;
+if ( parseInt(gender) === 1 )
+   document.writeln( "Woman" );
+else
+   document.writeln( "Man" );
+
+7.8
+z doesn't change, so if it was initialized > 0, then the loop will run infinitely. Need to decrement z value
+while ( z >= 0 )
+   sum += z;

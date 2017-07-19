@@ -1,0 +1,108 @@
+Self-Review Exercises
+
+16.1
+Fill in the blanks in each of the following statements:
+
+a) Ajax applications use ________ requests to create Rich Internet Applications.
+b) In Ajax applications, the ________ object manages asynchronous interaction with the server.
+c) The event handler called when the server responds is known as a(n) ________ function.
+d) The ________ attribute can be accessed through the DOM to update an HTML5 element’s content without reloading the page.
+e) JavaScript’s XMLHttpRequest object is commonly abbreviated as ________.
+f) ________ is a simple way to represent JavaScript objects as strings.
+g) Making a request to a different server is known as ________.
+h) JavaScript’s ________ function can convert JSON strings into JavaScript objects.
+i) A(n) ________ encloses code that might cause an exception and code that should not execute if an exception occurs.
+j) The XMLHttpRequest object’s ________ contains the XML returned by the server.
+16.2
+State whether each of the following is true or false. If false, explain why.
+
+a) Ajax applications must use XML for server responses.
+b) The technologies that are used to develop Ajax applications have existed since the 1990s.
+c) To handle an Ajax response, register for the XMLHttpRequest object’s readystatechanged event.
+d) An Ajax application can be implemented so that it never needs to reload the page on which it runs.
+e) The responseXML property of the XMLHttpRequest object stores the server’s response as a raw XML string.
+f) An exception indicates successful completion of a program’s execution.
+g) When the third argument to XMLHttpRequest method open is false, the request is asynchronous.
+h) For security purposes, the XMLHttpRequest object does not allow a web application to request resources from servers other than the one that served the web application.
+i) The innerHTML property of a DOM element can be used to obtain or change the HTML5 that’s displayed in a particular element.
+
+16.1
+a) asynchronous +
+b) XMLHttpRequest +
+c) callback +
+d) innerHTML +
+e) xhr +
+f) JSON +
+g) web call - Cross-Site Scripting (XSS)
+h) parse / JSON.parse
+i) try/catch +
+j) responseText - responseXML
+
+16.2
+a) False. JSON can also be used + And any textual data representation
+b) True. +
+c) True. +
+d) True. +
+e) False. The responseText stores the response from the server as a string / XMHttpRequest object parses and stores the response in a document object, not as raw XML
+f) False. Exception indicates that a problem occurred in the system and that code should not be run +
+g) False. Third argument set to True will make the request Asynchronous +
+h) True. +
+i) True. +
+
+Answers to Self-Review Exercises
+
+16.1
+a) asynchronous.
+b) XMLHttpRequest.
+c) callback.
+d) innerHTML.
+e) XHR.
+f) JSON.
+g) cross-site scripting (or XSS).
+h) JSON.parse.
+i) try block.
+j) responseXML property.
+16.2
+a) False. Ajax applications can use any type of textual data as a response. For example, we used JSON in this chapter.
+b) True.
+c) True.
+d) True.
+e) False. If the response data has XML format, the XMLHttpRequest object parses it and stores it in a document object.
+f) False. An exception is an indication of a problem that occurs during a program’s execution.
+g) False. The third argument to XMLHttpRequest method open must be true to make an asynchronous request.
+h) True.
+i) True.
+
+Exercises
+
+16.3
+Describe the differences between client/server interactions in traditional web applications and client/server interactions in Ajax web applications.
+	- Traditional client/server interactions were a lot less interactive and less like desktop appplications due to the requirement to refresh the entire page whenever data was to be sent to the server. In Ajax web applications, data can be sent back and forth between the server and client asynchronously and perform partial page updates that do not require the entire page to be refreshed. This betters the user experience because the user doesn't have to wait for the entire page to load everytime they try to perform an interaction with the server. For example, when entering information into a form that requires the form to perform some backend server check, then the data can be sent back and forth, and any problems can be displayed on the screen while the user is interacting with different elements. This makes using the application a lot faster and easier.
+
+16.4
+Consider the AddressBook application in Fig. 16.9. Describe how you could reimplement the type-ahead capability so that it could perform the search using data previously downloaded rather than making an asynchronous request to the server after every keystroke.
+	- It could be reimplemented by fetching the data from the first keystroke, then querying the data received. If there are no results returned from the stored data, then query the server for new data.
+
+16.5
+Describe each of the following terms in the context of Ajax:
+
+a) type-ahead
+	- When the user enters a character into an input box, the keyup event triggers and sends the inputted data to the server, which can return results based on what the user is currently typing
+b) edit-in-place
+	- When text becomes editable. An example would be if you had text (hover over causes some visual stimulus, such as highlighting the text, noting that an action can be performed) and when the user clicks on the text, it gets replaced with a text area (text copied into the text area), and allows the user to edit the text, submit it using an Ajax post method to a server, and have the new data appear without having to refresh the page.
+c) partial page update
+	- Rather than update the entire page, causing more data to be sent through the network and increasing user waiting time, the portion of the page that requires the new data can be updated without a complete refresh.
+d) asynchronous request
+	- One or more requests can be sent to the server and processed in the background, while the application is still running. 
+e) XMLHttpRequest
+	- XMLHttpRequest is an object that can be used to request or send data to a server. It is used to perform Ajax calls and for asynchronous requests to and from the server. It is the median between the client and the server
+f) “raw” Ajax
+	- Raw Ajax is the use of the XMLHttpRequest object to communicate with a database server
+g) callback function
+	- A callback function is a function that is called when an Ajax request has returned (or is going through the four phases of the request). It is essentiall a function that will operate once an ajax request completes.
+h) same origin policy
+	- States that the Ajax requests that occur should come from the same server (so no cross-site scripting), due to possible security issues (such as people injecting viruses through scripts using a site that the Ajax request calls to). The web application and its resources must reside on the same web server, and doesn't allow a web application to request resources from other domains that the one that served the application
+i) Ajax libraries
+	-  Most likely some libraries that are used to make Ajax calls easier (such as jQuery, possibly). Reducing code and increasing readability of the code.
+j) RIA [Note to Instructors and Students: Owing to security restrictions on using XMLHttpRequest, Ajax applications must be placed on a web server (even one on your local computer) to enable them to work correctly, and when they need to access other resources, those must reside on the same web server. Students: You’ll need to work closely with your instructors in order to understand your lab setup, so that you can run your solutions to the exercises (the examples are already posted on our web server), and in order to run many of the other server-side applications that you’ll learn later in the book.]
+	- A web application that uses Ajax to help make web applications perform faster and increase the users experience with the application. They help give the web application the look and feel of a traditional desktop application

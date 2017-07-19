@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 8.6</title>
+	<script type="text/javascript">
+		var number_vals = parseInt(prompt("Please Enter the number of integers that will be inputed"));
+		while (isNaN(number_vals)) {
+			number_vals = parseInt(prompt("Please Enter a valid number of integers to be inputed"));
+		}
+		var number;
+		var min_number;
+		min_number = parseFloat(prompt("Please Enter a Number"));
+		while (isNaN(min_number)) {
+			min_number = parseFloat(prompt("Please Enter a Valid Number"));
+		}
+		number_vals--;
+		document.write("<span>" + min_number);
+		while (number_vals > 0) {
+			number = parseFloat(prompt("Please Enter a <Nmber"));
+			if (isNaN(number)) {
+				alert("Invalid Input");
+				continue;
+			}
+			document.write(" " + number);
+			if ((number < min_number) && (number > 0)) {
+				min_number = number;
+			}
+			number_vals--;
+		}
+		document.writeln("</span> <br />");
+		document.write("<label> Minimum Number is: " + min_number + "</label>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

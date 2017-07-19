@@ -1,0 +1,19 @@
+18.6
+Fill in the blanks in each of the following statements:
+
+a)The ________ states that every column in a primary key must have a value, and the value of the primary key must be unique
+b)The ________ states that every foreign-key value must appear as another table’s primary-key value.
+c)A(n) ________ in a pattern indicates that a string matching the pattern can have zero or more characters at the percent character’s location in the pattern.
+d)Java DB is the Oracle branded version of ________.
+e)A(n) ________ in a LIKE pattern string indicates a single character at that position in the pattern.
+f)There’s a(n) ________ relationship between a primary key and its corresponding foreign key.
+g)SQL uses ________ as the delimiter for strings.
+
+a) Rule of Entity Integrity
+b) Rule of Referential Integrity
+c) Wildcard (%)
+d) Apache Derby
+e) Wildcard (_)
+f) One-To-Many
+g) ''
+

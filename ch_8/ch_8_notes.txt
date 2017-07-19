@@ -1,0 +1,15 @@
+Case-Switch
+	Controlling Expression: Value used inside the Switch/Case statement -> switch(<controlling expression>)
+	Case Labels: The different cases
+
+	Note: If break is not used anywhere in a switch statement, then each time a match occurs in the statement, the statements for that case and all the remaining cases execute.
+
+Logical Operators
+	The && operator has a higher precedence than the || operator
+
+	Short-Circuit Evaluation: If the first statement in a logical AND expression is False, then the rest of the expression is not evaluated. If the first statement in a logical OR expression is True, then the rest of the expression is not evaluated. This is done for performance optimizations.
+
+	Nonzero numeric values are considered to be true. The numeric value zero is considered to be false.
+	Any string that contains characters is considered to be true. The empty string (i.e., the string containing no characters) is considered to be false.
+	The value null and variables that have been declared but not initialized are considered to be false. 
+	All objects (such as the browser’s document and window objects and JavaScript’s Math object) are considered to be true.

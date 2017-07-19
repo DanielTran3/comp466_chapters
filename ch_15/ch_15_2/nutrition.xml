@@ -1,0 +1,64 @@
+<?xml version = "1.0"?>
+<?xml-stylesheet type = "text/xsl" href = "nutrition.xsl"?>
+
+<nf>
+    <nutritionData>
+        <nutritionName>Product Name</nutritionName>
+        <nutritionValue>Grandma White's Cookies</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Serving Size</nutritionName>
+        <nutritionValue>1 Package</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Calories</nutritionName>
+        <nutritionValue>260</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Calories From Fat</nutritionName>
+        <nutritionValue>100</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Grams of Fat</nutritionName>
+        <nutritionValue>11</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Grams of Saturated Fat</nutritionName>
+        <nutritionValue>2</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Cholesterol</nutritionName>
+        <nutritionValue>5</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Sodium</nutritionName>
+        <nutritionValue>210</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Carbohydrates</nutritionName>
+        <nutritionValue>36</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Fiber</nutritionName>
+        <nutritionValue>2</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Sugar</nutritionName>
+        <nutritionValue>15</nutritionValue>
+    </nutritionData>
+    <nutritionData>
+        <nutritionName>Protein</nutritionName>
+        <nutritionValue>5</nutritionValue>
+    </nutritionData>
+    <fatContent>
+        <fatCalories>100</fatCalories>
+        <gramsOfFat>11</gramsOfFat>
+        <gramsOfSaturatedFat>2</gramsOfSaturatedFat>
+    </fatContent>
+    <cholesterol>5</cholesterol>
+    <sodium>210</sodium>
+    <carbohydrates>36</carbohydrates>
+    <fiber>2</fiber>
+    <sugar>15</sugar>
+    <protein>5</protein>
+</nf>

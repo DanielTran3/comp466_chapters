@@ -1,0 +1,32 @@
+<!--
+6.18
+Write a script that takes three integers from the user and displays the sum, average, product, smallest and largest of the numbers in an alert dialog.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 6.18</title>
+	<script type="text/javascript">
+		var val1 = parseInt(prompt("Please Enter a value"));
+		while (isNaN(val1)) {
+			val1 = parseInt(prompt("Please Enter a valid value"));
+		}
+		var val2 = parseInt(prompt("Please Enter a value"));
+		while (isNaN(val2)) {
+			val2 = parseInt(prompt("Please Enter a valid value"));
+		}
+		var val3 = parseInt(prompt("Please Enter a value"));
+		while (isNaN(val3)) {
+			val3 = parseInt(prompt("Please Enter a valid value"));
+		}
+		var sum = val1 + val2 + val3;
+		var average = (val1 + val2 + val3) / 3;
+		var product = val1 * val2 * val3;
+		var listVals = [val1, val2, val3].sort();
+		document.writeln("<p>Sum: " + sum + " Avg: " + average + " Product: " + product + " Min: " + listVals[0] + " Max: " + listVals[2] + "</p>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

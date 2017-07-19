@@ -1,0 +1,97 @@
+Self-Review Exercises
+
+6.1
+Fill in the blanks in each of the following statements:
+
+a) ________ begins a single-line comment.
+b) Every JavaScript statement should end with a(n) ________.
+c) The ________ statement is used to make decisions.
+d) The ________ object displays alert dialogs and prompt dialogs.
+e) ________ words are reserved for use by JavaScript.
+f) Methods ________ and ________ of the ________ object write HTML5 text into an HTML5 document.
+6.2
+State whether each of the following is true or false. If false, explain why.
+
+a) Comments cause the computer to print the text after the // on the screen when the script is executed.
+b) JavaScript considers the variables number and NuMbEr to be identical.
+c) The remainder operator (%) can be used only with numeric operands.
+d) The arithmetic operators *, /, %, + and - all have the same level of precedence.
+e) Method parseInt converts an integer to a string.
+6.3
+Write JavaScript statements to accomplish each of the following tasks:
+
+a) Declare variables c, thisIsAVariable, q76354 and number.
+b) Display a dialog asking the user to enter an integer. Show a default value of 0 in the dialog.
+c) Convert a string to an integer, and store the converted value in variable age. Assume that the string is stored in stringValue.
+d) If the variable number is not equal to 7, display "The variable number is not equal to 7" in a message dialog.
+e) Output a line of HTML5 text that will display the message "This is JavaScript" in the HTML5 document.
+6.4
+Identify and correct the errors in each of the following statements:
+
+a) if ( c < 7 );    window.alert( "c is less than 7" );
+b) if ( c => 7 )    window.alert( "c is equal to or greater than 7" );
+6.5
+Write a statement (or comment) to accomplish each of the following tasks:
+
+a) State that a script will calculate the product of three integers [Hint: Use text that helps to document a script.]
+b) Declare the variables x, y, z and result.
+c) Declare the variables xVal, yVal and zVal.
+d) Prompt the user to enter the first value, read the value from the user and store it in the variable xVal.
+e) Prompt the user to enter the second value, read the value from the user and store it in the variable yVal.
+f) Prompt the user to enter the third value, read the value from the user and store it in the variable zVal.
+g) Convert the string xVal to an integer, and store the result in the variable x.
+h) Convert the string yVal to an integer, and store the result in the variable y.
+i) Convert the string zVal to an integer, and store the result in the variable z.
+j) Compute the product of the three integers contained in variables x, y and z, and assign the result to the variable result.
+k) Write a line of HTML5 text containing the string "The product is " followed by the value of the variable result.
+6.6
+Using the statements you wrote in Exercise 6.5, write a complete script that calculates and prints the product of three integers.
+
+6.1
+a) //
+b) ;
+c) if
+d) window
+e) key - keywords
+f) ???? - write, writeln, document
+
+6.2
+a) False. Comments are not read by the computer
+b) False. They are different. Casing matters
+c) True.
+d) False, + and - have lower precedence
+e) False. Converts a string into an int
+
+6.3
+a) var c, thisIsAVariable, q76354, number;
+b) window.prompt("Please Enter an Integer", "0");
+c) var age = parseInt(stringValue);
+d) 
+if (praseInt(number) !== 7) {
+	window.alert("The variable number is not equal to 7");
+}
+e) document.writeln("<p>This is JavaScript</p>");
+
+6.4
+a) Remove semicolon from if statement
+if ( c < 7 )
+	window.alert( "c is less than 7" );
+b) Should be >= instead of =>
+if ( c => 7 )
+	window.alert( "c is equal to or greater than 7" );
+
+6.5
+a) // Calculate product of 3 integers
+b) var x, y, z, result;
+c) var xVal, yVal, zVal;
+d) xVal = window.prompt("Please enter your first value");
+e) yVal = window.prompt("Please enter your second value");
+f) zVal = window.prompt("Please enter your third value");
+g) x = parseInt(xVal);
+h) y = parseInt(yVal);
+i) z = parseInt(zVal);
+j) result = x * y * z;
+k) document.writeln("<p>The product is " + result + "</p>");
+
+6.6
+Write everything in 6.5 again

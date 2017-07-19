@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 8.11</title>
+	<script type="text/javascript">
+		var price;
+		var productNumber = parseInt(prompt("Please Enter a product number (between 1 and 5) or exit to quit"));
+		var total_value = 0;
+		var quantity;
+
+		while (productNumber !== "exit") {
+			productNumber = parseInt(productNumber);
+			while (isNaN(productNumber)) {
+				productNumber = parseInt(prompt("Please Enter a valid number of integers to be inputed"));
+			}
+			quantity = parseInt(prompt("Please Enter the quantity sold"));
+			while (isNaN(quantity)) {
+				quantity = parseInt(prompt("Please Enter a valid quantity"));
+			}
+
+			switch(productNumber) {
+				case 1:
+					price = 2.98;
+					break;
+				case 2:
+					price = 4.50;
+					break;
+				case 3:
+					price = 9.98;
+					break;
+				case 4:
+					price = 4.49;
+					break;
+				case 5:
+					price = 6.87;
+					break;
+				default:
+					price = 0;
+			}
+			total_value += price * quantity;
+			productNumber = prompt("Please Enter a product number (between 1 and 5) or type exit to quit");
+		}
+		document.writeln("Total Retail Value Sold: " + total_value);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

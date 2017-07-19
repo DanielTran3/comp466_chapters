@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 8.9</title>
+	<script type="text/javascript">
+		var number_vals = parseInt(prompt("Please Enter the number of integers that will be inputed"));
+		while (isNaN(number_vals)) {
+			number_vals = parseInt(prompt("Please Enter a valid number of integers to be inputed"));
+		}
+		var numStars;
+		var starsString;
+		while (number_vals > 0) {
+			numStars = parseFloat(prompt("Please Enter a Number"));
+			while (isNaN(numStars)) {
+				numStars = parseFloat(prompt("Please Enter a Valid Number"));
+			}
+			starsString = "*".repeat(numStars);
+			document.writeln("<label>" + starsString + "</label> <br />");
+			number_vals--;
+		}
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

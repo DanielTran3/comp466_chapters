@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chapter 3 - Question 3.6</title>
+		<style type="text/css">
+			.bodyStyle {
+				max-width: 760px; 
+				margin-left: auto; 
+				margin-right: auto; 
+				font-family: 'Droid Serif', Georgia, serif;"
+				font-size: 1rem;
+				line-height: 1.5rem;
+				color: #333;
+			}
+			.picture {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+			.picture_full {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body class="bodyStyle">
+		<section id="1">
+			<h2>
+				<span>3.2.1</span>
+				<tt>input</tt>
+				<span>Type</span>
+				<tt>color</tt>
+			</h2>
+			<p>
+				The <tt>color input</tt> <b>type</b> (Fig. 3.1, lines 20-21) enables the user to enter a color. At the time of this writing, most browsers render the color input type as a text field in which the user can enter a hexadecamal code or a color name. In the future, when you click a <tt>color input</tt>, browsers will likely display a <i>color picker</i> similar to the Microsoft Windows color dialog shown in Fig. 3.2.
+			</p>
+
+			<h4 style="text-align:center;">Fig. 3.2 A dialog for choosing colors.</h4>
+			<figure>
+				<img src="../Code_Examples/ch03/exerciseTextAndImages/OperaColorInput2.png" alt="Input Color Selector" class="picture" />
+			</figure>
+		</section>
+		<section>
+			<h2 style="font-style:italic;">
+				<tt>autofocus</tt> Attribute
+			</h2>
+			<p>
+				The <tt>autofocus</tt> <b>attribute</b> (Fig. 3.1, line 20)-an optional attribute that can be used in only one <tt>input</tt> element on a form-automatically gives the focus to the <tt>input</tt> element, allowing the user to begin typing in that element immediately. Figure 3.3 shows <tt>autofocus</tt> on the <tt>color</tt> element-the first <tt>input</tt> element in our form-as rendered in Chrome. You do not need to include <tt>autofocus</tt> in your forms.
+			</p>
+
+			<h4 style="text-align:center;">Fig. 3.3 Autofocus in the <tt>color input</tt> element using Chrome.</h4>
+			<figure style="margin:0">
+				<img src="../Code_Examples/ch03/exerciseTextAndImages/autofocus.png" alt="Auto Focus Form" class="picture_full" />
+			</figure>
+		</section>
+		
+		
+		<section>
+			<h2 style="font-style:italic;">
+				Validation
+			</h2>
+			<p>
+				Traditionally it's been difficult to validate user input, such as ensuring that an e-mail address, URL, date or time is entered in the proper format. The new HTML 5 <tt>input</tt> types are <i>self validating</i> on the client side, eliminating the need to add complicated JavaScript code to your web pages to validate user input, reducing the amount of invalid data submitted and consequently reducing Internet traffic between the server and the client to correct invalid input. <i>The server should still validate all user input.</i>
+				<br /> <br />
+				When a user enters data into a form then submits the form (in this example, by clicking the <b>Submit</b> button), the browser immediately checks the self-validating elements to ensure that the data is correct. For example, if a user enters an incorrect hexadecimal color value when using a browser that renders the <tt>color</tt> elements as a text field (e.g., Chrome), a callout pointing to the element will appear, indicating that an invalid value was entered (Fig. 3.4). Figure 3.5 lists each of the new HTML5 <tt>input</tt> types and provides examples of the proper formats required for each type of data to be valid.
+			</p>
+
+			<h4 style="text-align:center;">Fig. 3.4 Validating a <tt>color input</tt> in Chrome.</h4>
+			<figure style="margin:0;">
+				<img src="../Code_Examples/ch03/exerciseTextAndImages/selfvalidationChrome.png" alt="Auto Focus Form" class="picture_full" />
+			</figure style="margin:0;">
+			<details>
+				<summary>
+					Fig. 3.5 Self-validating <tt>input</tt> types
+				</summary>
+				<table style="background-color: #bfbfbf;">
+					<tr style="background-color: rgba(102, 102, 102, 1); color: #ffffff;">
+						<td>
+							<b>input</b> type
+						</td>
+						<td>
+							Format	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							color	
+						</td>
+						<td>
+							Hexadecimal code	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							date	
+						</td>
+						<td>
+							yyyy-mm-dd	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							datetime	
+						</td>
+						<td>
+							yyyy-mm-dd	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							datetime-local	
+						</td>
+						<td>
+							yyyy-mm-ddThh:mm+ff:gg	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							month	
+						</td>
+						<td>
+							yyyy-mm	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							number 	
+						</td>
+						<td>
+							Any numerical value. 	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							email	
+						</td>
+						<td>
+							name@domain.com	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							url	
+						</td>
+						<td>
+							http://www.domainname.com	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							time	
+						</td>
+						<td>
+							hh:mm	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							week	
+						</td>
+						<td>
+							yyyy-Wnn	
+						</td>
+					</tr>
+				</table> 
+			</details>
+		</section>
+	</body>
+</html>
+
+
+
+

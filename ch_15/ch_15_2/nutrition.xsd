@@ -1,0 +1,31 @@
+<?xml version = "1.0"?>
+
+<schema xmlns = "http://www.w3.org/2001/XMLSchema"
+   xmlns:nutritionFacts = "http://www.nutritionFacts.com/cookies"
+   targetNamespace = "http://www.nutritionFacts.com/cookies">
+
+   <complexType name = "fat">
+       <sequence>
+           <element name = "gramsOfFat" type = "int"/>
+           <element name = "fatCalories" type = "int"/>
+           <element name = "gramsOfSaturatedFat" type = "int"/>
+       </sequence>
+   </complexType>
+
+   <complexType name = "nutrition">
+       <all>
+           <element name = "productName" type = "string" />
+           <element name = "servingSize" type = "string" />
+           <element name = "calories" type = "int" />
+           <element name = "fatContent" type = "nutritionFacts:fat" />
+           <element name = "cholesterol" type = "int" />
+           <element name = "sodium" type = "int" />
+           <element name = "carbohydrates" type = "int" />
+           <element name = "fiber" type = "int" />
+           <element name = "sugar" type = "int" />
+           <element name = "protein" type = "int" />
+       </all>
+   </complexType>
+
+   <element name = "nf" type = "nutritionFacts:nutrition" />
+</schema>

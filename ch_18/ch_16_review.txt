@@ -1,0 +1,65 @@
+Self-Review Exercises
+
+18.1
+Fill in the blanks in each of the following statements:
+
+a)The international standard database language is ________.
+b)A table in a database consists of ________ and ________.
+c)The ________ uniquely identifies each row in a table.
+d)SQL keyword ________ is followed by the selection criteria that specify the rows to select in a query.
+e)SQL keywords ________ specify the order in which rows are sorted in a query.
+f)Merging rows from multiple database tables is called ________ the tables.
+g)A(n) ________ is an organized collection of data.
+h)A(n) ________ is a set of columns whose values match the primary key values of another table.
+i)The LINQ ________ clause is used for filtering.
+j)To get only unique results from a LINQ query, use the ________ method.
+k)The ________ clause declares a new temporary variable within a LINQ query.
+18.2
+State whether each of the following is true or false. If false, explain why.
+
+a)The orderby clause in a LINQ query can sort only in ascending order.
+b)LINQ queries can be used on both arrays and collections.
+c)The Remove method of the List class removes an element at a specific index.
+d)A BindingNavigator object can extract data from a database.
+e)LINQ to SQL automatically saves changes made back to the database.
+
+18.1
+a) SQL +
+b) Rows and Columns +
+c) Primary Key +
+d) SELECT - WHERE
+e) ORDER BY +
+f) Joining +
+g) Database +
+h) Foreign Keys +
+i) Select - Where
+j) distinct +
+k) from - Let
+
+18.2
+a) False. Descending order can also be specified +
+b) True (Arrays and collections both use the IEnumerable Interface, which LINQ uses). +
+c) True. - Remove removes the first element, while removeAt removes at the specified index
+d) False? + Binding Navigator lets users brows and manipulate data displayed by another GUI control. DataContext extracts data from a database
+e) True? - Need to call SubmitChanges method in DataContext to save changes to the database
+
+Answers to Self-Review Exercises
+
+18.1
+a) SQL.
+b) rows, columns.
+c) primary key.
+d) WHERE.
+e) ORDER BY.
+f) joining.
+g) database.
+h) foreign key.
+i) where.
+j) Distinct.
+k) let.
+18.2
+a) False. The descending modifier is used to make orderby sort in descending order.
+b) True.
+c) False. Remove removes the first element equal to its argument. RemoveAt removes the element at a specific index.
+d) False. A BindingNavigator allows users to browse and manipulate data displayed by another GUI control. A DataContext can extract data from a database.
+e) False. You must call the SubmitChanges method of the DataContext to save the changes made back to the database.

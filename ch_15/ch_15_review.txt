@@ -1,0 +1,126 @@
+Self-Review Exercises
+
+15.1
+Which of the following are valid XML element names? (Select all that apply.)
+
+a) yearBorn
+b) year.Born
+c) year Born
+d) year-Born1
+e) 2_year_born
+f) _year_born_
+15.2
+State which of the following statements are true and which are false. If false, explain why.
+
+a)XML is a technology for creating markup languages.
+b)XML markup is delimited by forward and backward slashes (/ and \).
+c)All XML start tags must have corresponding end tags.
+d)Parsers check an XML document’s syntax.
+e)XML does not support namespaces.
+f)When creating XML elements, document authors must use the set of XML tags provided by the W3C.
+g)The pound character (#), dollar sign ($), ampersand (&) and angle brackets (< and >) are examples of XML reserved characters.
+h)XML is not case sensitive.
+i)XML Schemas are better than DTDs, because DTDs lack a way of indicating what specific type of data (e.g., numeric, text) an element can contain, and DTDs are not themselves XML documents.
+j)DTDs are written using an XML vocabulary.
+k)Schema is a technology for locating information in an XML document.
+15.3
+Fill in the blanks for each of the following:
+
+a)________ help prevent naming collisions.
+b)________ embed application-specific information into an XML document.
+c)________ is Microsoft’s XML parser.
+d)XSL element ________ writes a DOCTYPE to the result tree.
+e)XML Schema documents have root element ________.
+f)XSL element ________ is the root element in an XSL document.
+g)XSL element ________ selects specific XML elements using repetition.
+h)Nodes that contain other nodes are called ________ nodes.
+i)Nodes that are peers are called ________ nodes.
+15.4
+In Fig. 15.2, we subdivided the author element into more detailed pieces. How might you subdivide the date element? Use the date May 5, 2005, as an example.
+
+15.5
+Write a processing instruction that includes style sheet wap.xsl.
+
+15.6
+Write an XPath expression that locates contact nodes in letter.xml (Fig. 15.4).
+
+Answers to Self-Review Exercises
+
+15.1
+a, b, d, f. [Choice c is incorrect because it contains a space. Choice e is incorrect because the first character is a number.]
+
+15.2
+a) True.
+b) False. In an XML document, markup text is delimited by tags enclosed in angle brackets (< and >) with a forward slash just after the < in the end tag.
+c) True.
+d) True.
+e) False. XML does support namespaces.
+f) False. When creating tags, document authors can use any valid name but should avoid ones that begin with the reserved word xml (also XML, Xml, etc.).
+g) False. XML reserved characters include the ampersand (&), the left angle bracket (<) and the right angle bracket (>), but not # and $.
+h) False. XML is case sensitive.
+i) True.
+j) False. DTDs use EBNF grammar, which is not XML syntax.
+k) False. XPath is a technology for locating information in an XML document. XML Schema provides a means for type checking XML documents and verifying their validity.
+15.3
+a) Namespaces.
+b) Processing instructions.
+c) MSXML.
+d) xsl:output.
+e) schema.
+f) xsl:stylesheet.
+g) xsl:for-each.
+h) parent.
+i) sibling.
+15.4
+<date>
+   <month>May</month>
+   <day>5</day>
+   <year>2005</year>
+</date>
+15.5
+<?xsl:stylesheet type = "text/xsl" href = "wap.xsl"?>
+
+15.6
+/letter/contact.
+
+My Answers
+
+15.1
+a, b, d, f
+
+15.2
+a) True +
+b) False. Delimited by <> +
+c) True +
+d) True +
+e) False. Namespaces exist to avoid conflicts with predefined namespaces for the same element names +
+f) False. Any kind of tags can be created to suit the needs of the developer/user + (but xml with any combination of capitalization)
+g) True - # and $ are not reserved symbols, but <, >, and & are
+h) False. XML is case sensitive +
+i) False. DTD are XML documents -
+j) True - DTDs use EBNF grammar and not XML syntax
+k) False. XPath is a tecnology for locating information in an XML document. + XML schema only does type checking and verifies validity
+
+15.3
+a) namespaces +
+b) DTD - Processing Instructions
+c) MSMN - MSXML
+d) xsl:output +
+e) xml - Schema
+f) xsl-stylesheet - xsl:stylesheet
+g) xsl:for-each select +
+h) parent +
+i) sibling +
+
+15.4 +
+<date>
+	<Month>May</Month>
+	<day>5</day>
+	<year>2005</year>
+</date>
+
+15.5 +
+<?xml-stylesheet type="text/xsl" hfef="wap.xsl"?>
+
+15.6 +
+/letter/contact
